@@ -98,7 +98,6 @@ function getLenders(amount, apr, years, zipcode) {
     // Fetch the contents of that URL using the XMLHttpRequest object
     var req = new XMLHttpRequest(); 
     req.open("GET", url); 
-    req.send(null);
 
     // Before returning, register an event
     // at some later time when the HTTP server's response arrives. This kind of 
@@ -120,6 +119,8 @@ function getLenders(amount, apr, years, zipcode) {
             ad.innerHTML = "<ul>" + list + "</ul>"; 
         } 
     }
+
+    req.send(null);
 }
 
 
