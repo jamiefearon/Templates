@@ -1,0 +1,1 @@
+Ajax upload (using FormData and XML2) is not wildly supported and so the JQuery Plugin jQuery.FormPlugin is required to enable cross platform support for ajax uploading. 
